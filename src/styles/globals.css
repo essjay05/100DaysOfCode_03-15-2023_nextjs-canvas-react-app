@@ -4,7 +4,7 @@
 
 :root {
   --max-width: 1100px;
-  --border-radius: 12px;
+  --border-radius: 0.2rem;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
@@ -163,6 +163,51 @@ button:focus,
 .toggle-checkbox:checked + .toggle-label {
   @apply: bg-green-400;
   background-color: #68d391;
+}
+
+.tools-container {
+  margin: 1rem auto;
+  background: var(--white-color);
+  color: var(--dark-grey-color);
+  padding: 1rem;
+}
+
+.tools-container > * {
+  margin: 0 0.5rem;
+}
+
+.tools-wrapper,
+.tool-wrapper,
+.btn-actions {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.tool-wrapper label {
+  margin-right: 0.5rem;
+}
+
+.tool-wrapper #PenColor {
+  background-color: transparent;
+}
+
+#Whiteboard,
+.canvas-container,
+.tools-container {
+  border-radius: var(--border-radius);
+  margin: 1rem auto 2rem;
+}
+
+.tools-container button {
+  color: var(--white-color);
+  padding: 0.5rem;
+  transition: var(--default-transition);
+  border-radius: var(--border-radius);
+}
+
+.btn-actions > * {
+  margin: 0 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {

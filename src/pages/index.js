@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import Header from '@/components/global/Header'
 import Footer from '@/components/global/Footer'
-import styles from '@/styles/Home.module.css'
+import Board from '@/components/Board'
 
 export default function Home() {
   return (
@@ -14,8 +14,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header/>
-      <h1>Joy-OAT Whiteboard</h1>
+      <Header />
+      <Board />
       <Footer />
     </>
   )

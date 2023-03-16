@@ -3,6 +3,8 @@ import { fabric } from 'fabric'
 
 import DownloadArrow from './global/svg/DownloadArrow'
 
+import styles from '@/styles/Home.module.css'
+
 const Board = () => {
 
   const canvasRef = useRef(null)
@@ -178,7 +180,7 @@ const Board = () => {
           </div>
         </div>
       </section>
-      <canvas ref={canvasRef} className='mx-auto'></canvas>
+      <canvas id='Whiteboard' ref={canvasRef} className='mx-auto'></canvas>
     </div>
   )
 }
