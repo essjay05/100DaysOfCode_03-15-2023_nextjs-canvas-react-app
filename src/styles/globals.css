@@ -42,6 +42,20 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --white-color: #ffffff;
+  --light-grey-color: #dcdde1;
+  --grey-color: #718093;
+  --dark-grey-color: #2f3640;
+  --red-color: #ea2027;
+  --orange-color: #ee5a24;
+  --yellow-color: #ffc312;
+  --green-color: #009432;
+  --blue-color: #0652dd;
+  --teal-color: #079992;
+  --purple-color: #5f27cd;
+
+  --default-transition: 0.3s ease-in-out;
 }
 
 @media (prefers-color-scheme: dark) {
